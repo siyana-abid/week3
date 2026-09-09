@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    
+let student = {
+    name: "Siyana",
+    age: 18
+};
+
+// Save
+localStorage.setItem("student", JSON.stringify(student));
+
+// Get
+let data = localStorage.getItem("student");
+
+// Convert to object
+let result = JSON.parse(data);
+
+console.log(result.name);
+console.log(result.age);
+
+  </script>  
+</body>
+</html>
